@@ -10,5 +10,9 @@ def my_home():
 def my_office():
     return "I am at my office"
 
+@app.route("/gym")
+def my_gym():
+    return "I am at my gym"
+
 if __name__ = "__main__":
     app.run(debug = True)
