@@ -6,7 +6,7 @@ app = Flask(__name__)
 def my_home():
     return "I am at my home"
 
-@app.route("/office")
+@app.route("/office", methods = ['GET', 'POST'])
 def my_office():
     return "I am at my office"
 
