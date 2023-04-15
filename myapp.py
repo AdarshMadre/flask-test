@@ -10,9 +10,9 @@ def my_home():
 def my_office():
     return "I am at my office"
 
-@app.route("/gym")
+@app.route("/gym", methods = ['GET', 'POST'])
 def my_gym():
     return "I am at my gym"
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     app.run(debug = True)
